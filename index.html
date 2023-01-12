@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center bg-dark" style="height: 100vh">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 mx-auto d-flex flex-column p-3 text-center">
+          <h1 class="text-light" id="result"></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4 bg-light mx-auto d-flex flex-column p-3 rounded">
+          <p class="text-dark text-center">Enter your phone number</p>
+          <input type="number" id="input-number" placeholder="09-xxxxxxxxx" class="rounded border border-none" />
+          <button class="btn btn-sm btn-primary mt-3" onclick="getOTP(6, {specialChars: false, alphabet: false, upperCase: false})">
+            Get OTP
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
